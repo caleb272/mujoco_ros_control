@@ -1,13 +1,13 @@
 
 find_path(mujoco_INCLUDE_DIR
         NAMES mujoco.h
-        PATHS $ENV{HOME}/.mujoco/mjpro200/include
+        PATHS $ENV{HOME}/.mujoco/mujoco210/include
         NO_DEFAULT_PATH
         )
 
 find_library(mujoco_LIBRARIES
-        NAMES libmujoco200.so
-        PATHS $ENV{HOME}/.mujoco/mjpro200/bin 
+        NAMES libmujoco210.so
+        PATHS $ENV{HOME}/.mujoco/mujoco210/bin
         NO_DEFAULT_PATH
         )
 
@@ -18,8 +18,8 @@ find_library(mujoco_LIBRARIES
 #        )
 
 find_library(libglew_LIBRARIES
-        NAMES libglew.so 
-        PATHS $ENV{HOME}/.mujoco/mjpro200/bin
+        NAMES libglew.so
+        PATHS $ENV{HOME}/.mujoco/mujoco210/bin
         NO_DEFAULT_PATH
         )
 
